@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para a minha pessoa favorita</title>
+    <style>
+        :root {
+            --cor-fundo: #fff0f3;
+            --cor-primaria: #ff4d6d;
+            --cor-texto: #594141;
+            --cor-detalhe: #ff8fa3;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            scroll-behavior: smooth;
+        }
+
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        /* Página 1: Abertura */
+        .abertura {
+            background: linear-gradient(180deg, #fff0f3 0%, #ffcad4 100%);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--cor-primaria);
+            margin-bottom: 10px;
+        }
+
+        /* Estilo Polaroid */
+        .polaroid-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .polaroid {
+            background: white;
+            padding: 10px 10px 30px 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border: 1px solid #eee;
+            transition: 0.3s;
+        }
+
+        .polaroid img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .polaroid p {
+            margin: 10px 0 0 0;
+            font-family: 'cursive', 'Brush Script MT', sans-serif;
+            font-size: 1rem;
+            color: #777;
+        }
+
+        /* Cards de Conteúdo */
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            max-width: 550px;
+            width: 100%;
+            border: 2px solid #ffcad4;
+            margin-bottom: 40px;
+        }
+
+        .texto-amor {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .assinatura {
+            margin-top: 20px;
+            font-weight: bold;
+            color: var(--cor-primaria);
+            display: block;
+        }
+
+        /* Estilo da Lista Top 10 */
+        ul {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #ffd1dc;
+            font-size: 1.05rem;
+        }
+
+        li strong {
+            color: var(--cor-primaria);
+        }
+
+        /* Botão Interativo */
+        .btn {
+            background-color: var(--cor-primaria);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(255, 77, 109, 0.3);
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Vale Presente */
+        .ticket {
+            background: var(--cor-primaria);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin: 20px 0;
+            border: 2px dashed white;
+            box-shadow: 0 5px 15px rgba(255, 77, 109, 0.4);
+        }
+
+        .emoji-flutuar {
+            font-size: 3rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="abertura">
+        <div class="emoji-flutuar">🌸</div>
+        <h1>Para a minha pessoa favorita</h1>
+        <p>Eu preparei uma surpresa para você...</p>
+        <a href="#conteudo" class="btn">Abrir Presente ❤️</a>
+    </section>
+
+    <section id="conteudo">
+        
+        <div class="polaroid-container">
+            <div class="polaroid" style="transform: rotate(-3deg);">
+                <img src="foto1.jpg" alt="Nossa Foto 1">
+                <p>Nós dois ❤️</p>
+            </div>
+            <div class="polaroid" style="transform: rotate(3deg);">
+                <img src="foto2.jpg" alt="Nossa Foto 2">
+                <p>Para sempre ✨</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div style="font-size: 2rem; margin-bottom: 15px;">💝</div>
+            <p class="texto-amor">
+                Meu amor, deixo aqui uma simples declaração do quanto eu te amo. 
+                Que seu dia seja maravilhoso igual à pessoa incrível que você é. 
+                Eu te amo!
+            </p>
+            <span class="assinatura">
+                Feito com amor e carinho,<br>
+                do seu lindo namorado Gustavo
+            </span>
+        </div>
+
+        <div class="card">
+            <h2 style="color: var(--cor-primaria); margin-bottom: 25px;">🌷 Top 10 motivos pelos quais eu gosto da minha princesa 🌷</h2>
+            <ul>
+                <li><strong>1 -</strong> Seu lindo rostinho belo e puro</li>
+                <li><strong>2 -</strong> Seu senso de humor ótimo (igual ao meu)</li>
+                <li><strong>3 -</strong> Ser companheira, minha parceira pra toda vida</li>
+                <li><strong>4 -</strong> Suas demonstrações de amor e a forma que me faz me sentir especial</li>
+                <li><strong>5 -</strong> Sempre se dedicar e se esforçar todos os dias, você é meu orgulho</li>
+                <li><strong>6 -</strong> Ser muito carinhosa quando estamos juntos</li>
+                <li><strong>7 -</strong> Ser muito, MUITO linda todos os dias, me apaixono sempre por você</li>
+                <li><strong>8 -</strong> Ser muito sociável e ser uma pessoa adorável, me admiro muito</li>
+                <li><strong>9 -</strong> Ter o melhor gosto musical possível, amo escutar músicas com você</li>
+                <li><strong>10 -</strong> Me dar prioridade e me motivar a sempre ser uma pessoa melhor, te amo.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="final" style="background: linear-gradient(180deg, #fff 0%, #ffcad4 100%);">
+        <div class="emoji-flutuar">🎁</div>
+        
+        <div class="card" style="border: 3px dashed var(--cor-primaria); background-color: #fffafb;">
+            <h2 style="color: var(--cor-primaria);">Um presente especial para você...</h2>
+            <p>Por ser a melhor namorada do mundo, você ganhou um:</p>
+            
+            <div class="ticket">
+                🎟️ VALE-VISITA ESPECIAL <br>
+                <p style="font-size: 0.9rem; font-weight: normal; margin-top: 10px;">
+                    (Válido para usar toda vez que você quiser me ver! ❤️)
+                </p>
+            </div>
+
+            <p class="texto-amor" style="font-size: 1.1rem; font-style: normal;">
+                Meu amor, fiz este simples presentinho para te lembrar do quanto você é importante pra mim. 
+                A vida fica mais linda por ter você aqui, eu te amo minha princesa.
+            </p>
+        </div>
+
+        <h3 style="color: var(--cor-primaria); margin: 30px 0; line-height: 1.4; max-width: 80%;">
+            Eu te amo daqui até os 18 mil km para chegar no Japão! ✈️🇯🇵❤️
+        </h3>
+        
+        <p style="font-weight: bold; color: var(--cor-texto);">
+            Obrigado pela pessoa maravilhosa que você é para mim.
+        </p>
+
+        <button onclick="finalizar()" class="btn">Clique aqui, amor ❤️</button>
+
+        <footer style="margin-top: 50px; padding-bottom: 20px; font-size: 0.8rem; opacity: 0.7;">
+            Feito pelo seu Gustavo com todo o amor do mundo.
+        </footer>
+    </section>
+
+    <script>
+        function finalizar() {
+            alert("Obrigado por ser minha pessoa favorita! Mal posso esperar para vc usar seu vale-visita. 😍");
+        }
+    </script>
+
+</body>
+</html>
